@@ -1,0 +1,314 @@
+@font-face {
+  font-family: Alaska;
+  src: url("https://d33wubrfki0l68.cloudfront.net/7d1291688569bd47c9be3ab704926eafc0d8ef7d/b8dcd/fonts/alaska.ttf") format("truetype");
+  font-display: swap;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: 'Alaska', sans-serif;
+  letter-spacing: -.5px;
+  font-variation-settings: 'wdth' 80;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3em;
+  margin: 0px 15px 0px 15px;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 900;
+  color: #222222;
+}
+
+p {
+  font-size: 1.3em;
+  margin: 15px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  height: 100px;
+}
+
+header .header-wrapper {
+  height: 100%;
+  max-width: 962px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header-wrapper .active {
+  border-bottom: 5px solid !important;
+}
+
+header .header-wrapper button {
+  margin: 0px 3% 0px 3%;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 1rem;
+  letter-spacing: -.5px;
+  font-weight: 600;
+  font-variation-settings: 'wdth' 80;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-family: 'Alaska', sans-serif;
+}
+
+header .header-wrapper button:hover {
+  border-bottom: 5px solid !important;
+}
+
+header .header-wrapper #home-btn {
+  color: #94167f;
+  border-color: #94167f;
+}
+
+header .header-wrapper #sobre-btn {
+  color: #e93479;
+  border-color: #e93479;
+}
+
+header .header-wrapper #conhecimentos-btn {
+  color: #ff6600;
+  border-color: #ff6600;
+}
+
+#home {
+  height: 800px;
+}
+
+#home #home-conteudo {
+  max-width: 605px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#home #home-conteudo h1 {
+  color: whitesmoke;
+  background: -webkit-gradient(linear, left top, right top, color-stop(44%, #e93479), to(#ff6600));
+  background: linear-gradient(to right, #e93479 44%, #ff6600);
+  background-size: 200%;
+  background-position: right;
+  padding: 30px 50px 30px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#home #home-conteudo p {
+  text-align: justify;
+  color: #222222;
+}
+
+#sobre {
+  scroll-margin-top: 130px;
+  background: #9400d5;
+  background: -webkit-gradient(linear, left top, right top, from(#94167f), color-stop(44%, #e93479), to(#ff6600));
+  background: linear-gradient(90deg, #94167f 0%, #e93479 44%, #ff6600 100%);
+  background-size: 300%;
+  background-position: left;
+  height: 500px;
+  -webkit-animation: background-animation 150s infinite alternate;
+          animation: background-animation 150s infinite alternate;
+}
+
+#sobre #sobre-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#sobre #sobre-wrapper h1 {
+  color: whitesmoke;
+  text-align: right;
+}
+
+#sobre #sobre-wrapper p {
+  color: whitesmoke;
+  text-align: right;
+}
+
+@-webkit-keyframes background-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes background-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+#conhecimentos {
+  height: 600px;
+  scroll-margin-top: 100px;
+}
+
+#conhecimentos #conhecimentos-conteudo {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: left;
+}
+
+#conhecimentos #conhecimentos-conteudo h1 {
+  margin-left: 15px;
+}
+
+#conhecimentos #conhecimentos-conteudo h1, #conhecimentos #conhecimentos-conteudo p {
+  color: #222222;
+}
+
+#conhecimentos #conhecimentos-conteudo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 15px 0px 0px 15px;
+}
+
+#conhecimentos #conhecimentos-conteudo ul li {
+  display: inline;
+  margin-right: 4%;
+  font-size: 3em;
+  padding: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#conhecimentos #conhecimentos-conteudo ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#conhecimentos #conhecimentos-conteudo ul .html-icon {
+  color: chocolate;
+}
+
+#conhecimentos #conhecimentos-conteudo ul .css-icon {
+  color: #1762ee;
+}
+
+#conhecimentos #conhecimentos-conteudo ul .sass-icon {
+  color: palevioletred;
+}
+
+#conhecimentos #conhecimentos-conteudo ul .js-icon {
+  color: #e9c600;
+}
+
+#conhecimentos #conhecimentos-conteudo ul .react-icon {
+  color: #61c5ff;
+}
+
+#conhecimentos #conhecimentos-conteudo ul .git-icon {
+  color: #8b4615;
+}
+
+footer {
+  height: 100px;
+  background-color: #cecece;
+}
+
+footer .footer-wrapper {
+  max-width: 962px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer .footer-wrapper p {
+  margin: 5px 0px 0px 0px;
+  font-size: 0.9em;
+  font-weight: 800;
+  color: #222222;
+  width: 100%;
+}
+
+footer .footer-wrapper .contatos-links {
+  width: 100%;
+}
+
+footer .footer-wrapper .contatos-links a {
+  margin: 0 1% 0 1%;
+  color: #222222;
+  font-size: 0.9rem;
+  letter-spacing: -.5px;
+  font-weight: 800;
+  font-variation-settings: 'wdth' 80;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+footer .footer-wrapper .contatos-links a:hover {
+  color: #d33100;
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1em;
+  }
+  li {
+    font-size: 2.5em !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
