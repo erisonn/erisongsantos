@@ -75,10 +75,6 @@ header .header-wrapper button {
   font-family: 'Alaska', sans-serif;
 }
 
-header .header-wrapper button:hover {
-  border-bottom: 5px solid !important;
-}
-
 header .header-wrapper #home-btn {
   color: #94167f;
   border-color: #94167f;
@@ -96,6 +92,7 @@ header .header-wrapper #conhecimentos-btn {
 
 #home {
   height: 800px;
+  background-color: inherit;
 }
 
 #home #home-conteudo {
@@ -309,6 +306,12 @@ footer .footer-wrapper .contatos-links a:hover {
   }
   li {
     font-size: 2.5em !important;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  header .header-wrapper button:hover {
+    border-bottom: 5px solid !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

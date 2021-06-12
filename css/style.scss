@@ -57,9 +57,6 @@ header {
             cursor: pointer;
             transition: 0.2s ease-in-out;
             font-family: 'Alaska', sans-serif;
-            &:hover {
-                border-bottom: 5px solid !important;
-            }
         }
         #home-btn {
             color: #94167f;
@@ -78,6 +75,7 @@ header {
 
 #home {
     height: 800px;
+    background-color: inherit;
     #home-conteudo {
         max-width: 605px;
         margin: 0 auto;
@@ -235,5 +233,16 @@ footer {
     }
     li {
         font-size: 2.5em !important;
+    }
+}
+@media only screen and(min-width:700px) {
+    header {
+        .header-wrapper {
+            button {
+                &:hover {
+                    border-bottom: 5px solid !important;
+                }
+            }
+        }
     }
 }
